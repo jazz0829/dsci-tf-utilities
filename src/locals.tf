@@ -1,0 +1,18 @@
+locals {
+  name_prefix                                                       = "cig"
+  cig_resource_checker_function_name                                = "${local.name_prefix}-resource-checker"
+  cig_sagemaker_batch_transform_job_status_function_name            = "${local.name_prefix}-sagemaker-batch-transform-job-status"
+  cig_sagemaker_create_batch_transform_job_function_name            = "${local.name_prefix}-sagemaker-create-batch-transform-job"
+  cig_sagemaker_create_model_function_name                          = "${local.name_prefix}-sagemaker-create-model"
+  cig_sagemaker_get_emr_cluster_status_function_name                = "${local.name_prefix}-sagemaker-get-emr-cluster-status"
+  cig_glue_endpoints_remover_function_name                          = "${local.name_prefix}-glue-endpoints-remover"
+  cig_sagemaker_get_glue_job_status_function_name                   = "${local.name_prefix}-sagemaker-get-glue-job-status"
+  cig_sagemaker_query_athena_function_name                          = "${local.name_prefix}-sagemaker-query-athena"
+  cig_cig_sagemaker_run_emr_job_function_name                       = "${local.name_prefix}-sagemaker-run-emr-job"
+  cig_sagemaker_run_glue_job_function_name                          = "${local.name_prefix}-sagemaker-run-glue-job"
+  cig_s3_openaccess_responder_function_name                         = "${local.name_prefix}-s3-openaccess-responder"
+  cig_security_group_autocorrect_function_name                      = "${local.name_prefix}-security-group-autocorrect"
+  cig_sagemaker_slack_function_name                                 = "${local.name_prefix}-sagemaker-slack"
+  cig_sagemaker_training_job_status_and_output_function_name        = "${local.name_prefix}-sagemaker-training-job-status-and-output"
+  cig_security_group_ingress_authorized_rule_name                   = "${local.name_prefix}-security-group-ingress-authorized-rule"
+}
